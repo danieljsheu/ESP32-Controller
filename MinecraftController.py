@@ -5,7 +5,7 @@ import time
 import win32api
 import win32con
 
-#Function for moving camera, use Windows32 API library to simulae mouse movements
+#Function for moving camera, use Windows32 API library to simulate mouse movements
 def move_camera(dx, dy):
     win32api.mouse_event(win32con.MOUSEEVENTF_MOVE, int(dx), int(-dy), 0, 0)
 
